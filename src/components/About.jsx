@@ -71,9 +71,7 @@ const About = () => {
               Managing Director
             </p>
             <p className="italic text-gray-600 text-sm mt-2 sm:font-medium">
-              “When passion meets precision, magic happens. Leaders blend vision
-              with action. They sculpt businesses into empires and challenges
-              into victories.”
+              “As one who stands among the top 10 architecture designers from Nirma University, shaping skylines with innovation, precision, passion, and sustainable excellence.”
             </p>
           </div>
         </div>

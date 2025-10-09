@@ -34,7 +34,7 @@ const products = [
   { id: 11, name: "Beverages & Refreshments", img: Product11 },
   { id: 12, name: "Toys & Games", img: Product12 },
   { id: 13, name: "Electronics & Gadgets", img: Product13 },
-  { id: 14, name: "Pooja Essentials (Incense, Diyas & More)", img: Product14 },
+  { id: 14, name: "Pooja Essentials(Diyas & More)", img: Product14 },
   { id: 15, name: "Fragrances & Perfumes", img: Product15 },
   { id: 16, name: "Bags & Luggage", img: Product16 },
   { id: 17, name: "Spices & Masalas", img: Product17 },
@@ -46,7 +46,7 @@ const products = [
 const Product = () => {
   return (
     <div id="product" className="max-w-7xl mx-auto px-0 sm:py-10 py-6">
-      <h2 className="text-3xl font-bold text-center sm:mb-6 pb-2   font-serif">
+      <h2 className="text-3xl font-bold text-center sm:mb-6 pb-2 font-serif">
         Our Products
       </h2>
       <p className="text-center text-gray-600 max-w-2xl mx-auto sm:mb-8 mb-8 text-sm sm:text-base">
@@ -63,7 +63,7 @@ const Product = () => {
             className="rounded-2xl overflow-hidden group transition-all duration-300"
           >
             {/* Image */}
-            <div className="overflow-hidden flex justify-center items-center ">
+            <div className="overflow-hidden flex justify-center items-center">
               <img
                 src={product.img}
                 alt={product.name}
@@ -72,15 +72,23 @@ const Product = () => {
             </div>
 
             {/* Text & Button */}
-            <div className="sm:p-4  flex flex-col items-center text-center bg-transparent">
+            <div className="sm:p-4 flex flex-col items-center text-center bg-transparent">
               <h3 className="text-md sm:text-base font-medium text-gray-700 sm:mb-3 mb-1">
-                {product.name}
+                {product.id === 4 ? (
+                  <>
+                    Stationery & Office{" "}
+                    <span className="hidden lg:block">Supplies</span>
+                    <span className="lg:hidden inline">Supplies</span>
+                  </>
+                ) : (
+                  product.name
+                )}
               </h3>
               <a
                 href={`https://wa.me/9879284612?text=Hello, I want to inquire about ${product.name} items.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-md bg-black text-white px-5 py-2  sm:text-sm rounded-md hover:bg-gray-800 transition"
+                className="text-md bg-black text-white px-5 py-2 sm:text-sm rounded-md hover:bg-gray-800 transition"
               >
                 Inquiry Now
               </a>
