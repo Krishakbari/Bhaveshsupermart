@@ -12,7 +12,7 @@ const Contact = () => {
     const whatsappMessage = `Hello, I would like to contact you. Email: ${email} Message: ${message}`;
 
     // Redirect to WhatsApp chat
-    window.open(`https://wa.me/8238292976?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/9879284612?text=${whatsappMessage}`, "_blank");
 
     // Reset fields
     setEmail("");
