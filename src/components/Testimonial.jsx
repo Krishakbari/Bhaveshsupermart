@@ -29,7 +29,7 @@ const Testimonial = () => {
     <section id="review" className="w-full pb-6 pt-6 px-6 md:px-12 lg:px-20 bg-white">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">Our Testimonial</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">Our Reviews</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
          Every happy customer inspires us to serve better. From groceries to fashion, here are some genuine experiences shared by shoppers who visited our store
         </p>
