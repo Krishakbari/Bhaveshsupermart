@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.png";
 import banner from "../assets/hero.png";
@@ -13,7 +12,6 @@ const Navbar = () => {
   // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Check if the click is outside the menuRef
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setOpen(false);
       }
@@ -42,7 +40,7 @@ const Navbar = () => {
           <li><a href="#location" className="hover:text-red-500">Location</a></li>
         </ul>
 
-        {/* Mobile Menu Button - THE FIX IS HERE */}
+        {/* Mobile Menu Button */}
         <div className="md:hidden relative z-50">
           <button onClick={() => setOpen(!open)}>
             <svg
@@ -65,16 +63,13 @@ const Navbar = () => {
       {/* Mobile Dropdown Overlay */}
       {open && (
         <div className="fixed inset-0 bg-black/10 z-40 flex justify-center items-start pt-20">
-          <div
-            ref={menuRef}
-            className="w-[80%] bg-white rounded-xl shadow-lg p-6"
-          >
+          <div ref={menuRef} className="w-[80%] bg-white rounded-xl shadow-lg p-6">
             <ul className="flex flex-col space-y-4 text-gray-800 font-medium text-lg text-center">
               {["Home", "About", "Product", "Review", "Payment", "Contact", "Location"].map((item, i) => (
                 <li key={i}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    onClick={() => setOpen(false)} // close on click
+                    onClick={() => setOpen(false)}
                     className="block hover:text-red-500"
                   >
                     {item}
@@ -92,24 +87,70 @@ const Navbar = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
-          <h1 className="text-4xl md:text-6xl font-abril drop-shadow-md">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 px-6">
+          <h1 className="text-4xl md:text-6xl font-abril drop-shadow-md mt-8">
             Bhavesh Super Market
           </h1>
-
-          {/* Social Icons */}
-          <div className="flex space-x-6 mt-6">
-            <a href="https://www.instagram.com/bhavesh_super_market/" target="_blank" rel="noopener noreferrer">
-              <img src={insta} alt="Instagram" className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition" />
+           {/* Social Icons */}
+          <div className="flex space-x-6 mt-12">
+            <a
+              href="https://www.instagram.com/bhavesh_super_market/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={insta}
+                alt="Instagram"
+                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+              />
             </a>
-            <a href="https://www.facebook.com/share/15t1hB2uWk/" target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="Facebook" className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition" />
+            <a
+              href="https://www.facebook.com/share/15t1hB2uWk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={facebook}
+                alt="Facebook"
+                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+              />
             </a>
+            {/* <a
+              href="https://www.instagram.com/bhavesh_super_market/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={insta}
+                alt="Instagram"
+                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/share/15t1hB2uWk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={facebook}
+                alt="Facebook"
+                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+              />
+            </a> */}
           </div>
+
+          {/* ✨ Taglines */}
+          <p className="mt-16 text-lg md:text-2xl font-bricolage font-medium text-white/90 drop-shadow-sm">
+            One Stop Destination for Everything You Need.
+          </p>
+          <p className="mt-8 text-base md:text-xl font-poppins text-white/80 font-bricolage">
+            Quality • Trust • Variety — All Under One Shop.
+          </p>
+
+         
         </div>
 
         {/* WhatsApp Floating Button */}
-        {/* 🔹 WhatsApp Floating Button (Sticky on all screens) */}
         <div className="fixed sm:bottom-12 sm:right-12 bottom-8 right-2 z-[100]">
           <a
             href="https://wa.me/9879284612"
@@ -120,11 +161,10 @@ const Navbar = () => {
             <img
               src={WhatsApp}
               alt="WhatsApp"
-              className="h-12 w-12 sm:h-20 sm:w-20 "
+              className="h-12 w-12 sm:h-20 sm:w-20"
             />
           </a>
         </div>
-
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
