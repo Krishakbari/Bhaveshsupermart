@@ -130,7 +130,7 @@ const Navbar = () => {
               />
             </a>
             <a
-              href="https://www.facebook.com/share/15t1hB2uWk/"
+              href="https://www.justdial.com/Morbi/Bhavesh-Super-Market-Anant-Nagar/9999P2822-2822-230106205702-R5A5_BZDET?trkid=&term=&ncatid=10237947&area=&search=Showing%20Results%20for%20%22Bhavesh%20Super%20Market%20Anant%20Nagar%22%20in%20Morbi&mncatname=Bhavesh%20Super%20Market%20Anant%20Nagar&ftterm=Bhavesh%20Super%20Market%20Anant%20Nagar&abd_btn=&abd_heading=&isFreetxt=1&bd=2&cat_b2b_flag=&searchfrom=lst&thumbnail="
               target="_blank"
               rel="noopener noreferrer"
             >
