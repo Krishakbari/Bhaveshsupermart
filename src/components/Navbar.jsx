@@ -4,6 +4,9 @@ import banner from "../assets/hero.png";
 import insta from "../assets/insta.png";
 import facebook from "../assets/facebook.png";
 import WhatsApp from "../assets/whatssapp.png";
+// import Indiamart from "../assets/im.png";
+import Indiamart from "../assets/im1.png";
+import Justdial from "../assets/jd.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -92,7 +95,7 @@ const Navbar = () => {
             Bhavesh Super Market
           </h1>
            {/* Social Icons */}
-          <div className="flex space-x-6 mt-12">
+          <div className="flex space-x-8 mt-12">
             <a
               href="https://www.instagram.com/bhavesh_super_market/"
               target="_blank"
@@ -101,7 +104,7 @@ const Navbar = () => {
               <img
                 src={insta}
                 alt="Instagram"
-                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+                className="sm:h-16 sm:w-16 h-10 w-10  transition"
               />
             </a>
             <a
@@ -112,18 +115,18 @@ const Navbar = () => {
               <img
                 src={facebook}
                 alt="Facebook"
-                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+                className="sm:h-16 sm:w-16 h-10 w-10  transition"
               />
             </a>
-            {/* <a
-              href="https://www.instagram.com/bhavesh_super_market/"
+            <a
+              href="https://www.indiamart.com/bhavesh-super-market/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={insta}
+                src={Indiamart}
                 alt="Instagram"
-                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+                className="sm:h-16 sm:w-16 h-12 w-12 scale-125  transition pb-1"
               />
             </a>
             <a
@@ -132,18 +135,18 @@ const Navbar = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={facebook}
+                src={Justdial}
                 alt="Facebook"
-                className="sm:h-16 sm:w-16 h-10 w-10 hover:scale-110 transition"
+                className="sm:h-16 sm:w-16 h-14 w-14 pb-2 scale-150 transition sm:pt-1 "
               />
-            </a> */}
+            </a>
           </div>
 
           {/* ✨ Taglines */}
           <p className="mt-16 text-lg md:text-2xl font-bricolage font-medium text-white/90 drop-shadow-sm">
             One Stop Destination for Everything You Need.
           </p>
-          <p className="mt-8 text-base md:text-xl font-poppins text-white/80 font-bricolage">
+          <p className="mt-4 text-base md:text-xl  text-white/80 font-bricolage">
             Quality • Trust • Variety — All Under One Shop.
           </p>
 
