@@ -2,7 +2,7 @@ import React from "react";
 import Product1 from "../assets/product1.png";
 import Product4 from "../assets/product4.png";
 import Product9 from "../assets/product9.png";
-import Product1p2 from "../assets/product170.png";
+import Product170 from "../assets/product170.png";
 import Product12 from "../assets/product12.png";
 
 import Product22 from "../assets/product22.png";
@@ -50,7 +50,7 @@ import Product63 from "../assets/product63.png";
 
 const products = [
   { id: 1, name: "Men’s nightwear & Undergarments", img: Product1 },
-  { id: 2, name: "Watches-titan,sonata,fasttrack", img: Product1p2 },
+  { id: 2, name: "Watches-titan,sonata,fasttrack", img: Product170 },
   { id: 4, name: "Women’s Bra & Undergarments", img: Product22 },
   { id: 5, name: "Women’s Nightwear & Purse", img: Product23 },
   { id: 6, name: "Milton range products", img: Product24 },
