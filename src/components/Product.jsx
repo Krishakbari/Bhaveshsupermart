@@ -2,7 +2,7 @@ import React from "react";
 import Product1 from "../assets/product1.png";
 import Product4 from "../assets/product4.png";
 import Product9 from "../assets/product9.png";
-import Product1p2 from "../assets/product1.2.png";
+import Product1p2 from "../assets/product170.png";
 import Product12 from "../assets/product12.png";
 
 import Product22 from "../assets/product22.png";
