@@ -2,9 +2,8 @@ import React from "react";
 import Product1 from "../assets/product1.png";
 import Product4 from "../assets/product4.png";
 import Product9 from "../assets/product9.png";
-import Product170 from "../assets/product170.png";
+import Product170 from "../assets/Product170.png";
 import Product12 from "../assets/product12.png";
-
 import Product22 from "../assets/product22.png";
 import Product23 from "../assets/product23.png";
 import Product24 from "../assets/product24.png";
